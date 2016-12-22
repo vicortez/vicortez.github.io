@@ -36,30 +36,9 @@
 
     <script type="text/javascript">
 
-    $("div").click(function(){
-      $(this).animate({
-        width:"400px",
-      height:"400px",
-      marginLeft:"100px",
-      marginTop:"100px"
-    },2000, function(){ // callback function (executes after animation ended)
-      $(this).css("background-color","red");
-    })
-    })
-
-    $("p").click(function(){
-      $(this).fadeOut();
-    })
-    $("#secb").click(function(){
-      if($("#hid").css("display") == "none"){
-        $("#hid").fadeIn()
-      }else{
-        $("#hid").fadeOut()
-
-      }
-
-    })
-
+      $.get("text.txt", function(data){
+        alert(data);
+      });
 
 
 

@@ -35,9 +35,8 @@
 
 
     <script type="text/javascript">
-        var data;
       $.get("text.txt", function(data){
-        alert(data);
+        $("div").html(data);
       });
       $.ajax("text.txt").done(function(data){
         alert(data+" trough ajax function")

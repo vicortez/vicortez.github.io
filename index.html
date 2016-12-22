@@ -39,6 +39,9 @@
       $.get("text.txt", function(data){
         alert(data);
       });
+      $.ajax("text.txt").done(function(data){
+        alert(data+" trough ajax function")
+      });
 
 
 
